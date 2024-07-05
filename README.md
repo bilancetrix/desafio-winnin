@@ -1,6 +1,6 @@
-# cypress-basico-v2
+# cypress-desafio-winnin
 
-Sample project for the basic course of the Talking About Testing online school.
+Sample project for a challenge testing required.
 
 ## Pre-requirements
 It is required to have Node.js and npm installed to run this project.
