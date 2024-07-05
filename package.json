@@ -1,0 +1,12 @@
+{
+  "name": "desafio-winnin",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  }, 
+  "author": "Davi de Andrade davi.and1993@gmail.com",
+  "dependencies": {
+    "cypress": "^13.13.0"
+  }
+}
