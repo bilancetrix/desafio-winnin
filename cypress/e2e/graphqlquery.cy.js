@@ -2,11 +2,11 @@
 
 describe('GraphQL User API Test', function() {
   it('Retorna informação do USER', function() {
-    // Defina a URL do endpoint GraphQL
+    // Armazena a URL do endpoint em uma constante
     const graphqlEndpoint = 'https://graphqlzero.almansi.me/api';
 
-    // Defina a query GraphQL
-    const query = `
+    // Define a query a ser chamada pela automação
+    const queryJson = `
       query {
         user(id: 1) {
           id
@@ -15,19 +15,18 @@ describe('GraphQL User API Test', function() {
         }
       }
     `
-    // Faça a requisição GraphQL
+    //Requisição da API
     cy.request({
       method: 'POST',
       url: graphqlEndpoint,
       body: {
-        query: query
+        query: queryJson
       },
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer SEU_TOKEN_DE_AUTENTICACAO' // Se necessário
+        'Content-Type': 'application/json'
       }
     }).then((response) => {
-      // Verifique se a resposta está correta
+      // Valida se as respostas estão corretas
       expect(response.status).to.eq(200);
       expect(response.body.data).to.have.property('user');
       expect(response.body.data.user).to.include({
