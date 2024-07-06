@@ -2,7 +2,7 @@
 
 describe('GraphQL User API Test', function() {
   it('Retorna informação do USER', function() {
-    // Armazena a URL do endpoint em uma constante
+    // Armazenando a URL do endpoint em uma constante
     const graphqlEndpoint = 'https://graphqlzero.almansi.me/api';
 
     // Define a query a ser chamada pela automação

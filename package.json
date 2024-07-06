@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run"
+    "test": "cypress run",
+    "build": "npm clean install"
   }, 
   "author": "Davi de Andrade davi.and1993@gmail.com",
   "dependencies": {
