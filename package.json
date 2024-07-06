@@ -4,7 +4,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "test": "cypress run",
-    "build": "npm clean install"
+    "build": "npm install"
   }, 
   "author": "Davi de Andrade davi.and1993@gmail.com",
   "dependencies": {
