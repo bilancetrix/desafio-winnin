@@ -20,8 +20,7 @@ describe('Enter Wikipedia', function() {
   it('Digita sua pesquisa e valida resposta', function() {
     cy.get('#searchInput').type('Brasil')
     cy.get('button[type="submit"]').click()
-    cy.get('h1#firstHeading.firstHeading.mw-first-heading')
-      .should('have.text', 'Brazil')
+    cy.get('h1#firstHeading.firstHeading.mw-first-heading').should('have.text', 'Brasil')
     cy.get('.vector-sitenotice-container').should('be.visible')
     cy.get('#vector-toc-pinned-container').should('be.visible')
     cy.get('.mw-content-ltr > :nth-child(4)').should('be.visible')
